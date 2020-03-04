@@ -1,0 +1,21 @@
+@import 'const.scss';
+
+:global(body) {
+
+    margin: 0;
+
+    // --background-color: white;
+    --background-color: #F7F7F7;
+    --foreground-color: black;
+    @media (prefers-color-scheme: dark) {
+        --background-color: #{$off-black};
+        --foreground-color: #{$off-white};
+
+        a {
+            color: cornflowerblue;
+        }
+    }
+
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+}
