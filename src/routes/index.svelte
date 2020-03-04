@@ -1,4 +1,11 @@
 <script>
+let time;
+
+const update = () => {
+    time = new Date();
+}
+update();
+setInterval(update, 1000);
 </script>
 <style lang="sass">
 @import '../index.scss';
@@ -12,4 +19,6 @@
     <!-- <meta property="og:image" content="https://www.d13y.co/img/social.png" /> -->
 </svelte:head>
 
-Hello from <b>Svoilerplate</b>, definitely the last boilerplate anyone will ever need to use or create.
+Hello from <b>Svoilerplate</b>, definitely the last boilerplate anyone will ever need to use or create.<br/>
+<br/>
+The time is now {time}
